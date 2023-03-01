@@ -17,13 +17,13 @@ This capstone aims to develop the best possible binary classification model with
 
 ## Table of Contents
 
-1. [Data Collection](https://git.generalassemb.ly/makenajones/Capstone/blob/main/code/01_data_collection.ipynb) : Mass download images from google of both bear and other animal droppings to sort into classes to use for classification models.
+1. [Data Collection](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/blob/main/code/01_data_collection.ipynb) : Mass download images from google of both bear and other animal droppings to sort into classes to use for classification models.
 
-2. [EDA and Null Model](https://git.generalassemb.ly/makenajones/Capstone/blob/main/code/02_EDA_and_Null_Model.ipynb) :  Label and examine image classes using Tensorflow and evaluate the null model. 
+2. [EDA and Null Model](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/blob/main/code/02_EDA_and_Null_Model.ipynb) :  Label and examine image classes using Tensorflow and evaluate the null model. 
 
-3. [CNN Models](https://git.generalassemb.ly/makenajones/Capstone/blob/main/code/03_CNN_models.ipynb) : Run different CNN models using early stopping and dropout to get the best performance, using techniques such as data augmentation since dataset is relatively small.
+3. [CNN Models](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/blob/main/code/03_CNN_model.ipynb) : Run different CNN models using early stopping and dropout to get the best performance, using techniques such as data augmentation since dataset is relatively small.
 
-4. [Transfer Models](https://git.generalassemb.ly/makenajones/Capstone/blob/main/code/04_Transfer_Model.ipynb) : Use transfer model to see if it performs better than the models made from scratch in the previous section.
+4. [Transfer Models](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/blob/main/code/04_Transfer_Model.ipynb) : Use transfer model to see if it performs better than the models made from scratch in the previous section.
 
 ---
 
