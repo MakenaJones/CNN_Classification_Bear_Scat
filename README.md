@@ -17,28 +17,28 @@ This capstone aims to develop the best possible binary classification model with
 
 ## Table of Contents
 
-1. [Data Collection](https://git.generalassemb.ly/makenajones/Capstone/blob/main/code/01_data_collection.ipynb) : Mass download images from google of both bear and other animal droppings to sort into classes to use for classification models.
+1. [Data Collection](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/blob/main/code/01_data_collection.ipynb) : Mass download images from google of both bear and other animal droppings to sort into classes to use for classification models.
 
-2. [EDA and Null Model](https://git.generalassemb.ly/makenajones/Capstone/blob/main/code/02_EDA_and_Null_Model.ipynb) :  Label and examine image classes using Tensorflow and evaluate the null model. 
+2. [EDA and Null Model](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/blob/main/code/02_EDA_and_Null_Model.ipynb) :  Label and examine image classes using Tensorflow and evaluate the null model. 
 
-3. [CNN Models](https://git.generalassemb.ly/makenajones/Capstone/blob/main/code/03_CNN_models.ipynb) : Run different CNN models using early stopping and dropout to get the best performance, using techniques such as data augmentation since dataset is relatively small.
+3. [CNN Models](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/blob/main/code/03_CNN_model.ipynb) : Run different CNN models using early stopping and dropout to get the best performance, using techniques such as data augmentation since dataset is relatively small.
 
-4. [Transfer Models](https://git.generalassemb.ly/makenajones/Capstone/blob/main/code/04_Transfer_Model.ipynb) : Use transfer model to see if it performs better than the models made from scratch in the previous section.
+4. [Transfer Models](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/blob/main/code/04_Transfer_Model.ipynb) : Use transfer model to see if it performs better than the models made from scratch in the previous section.
 
 ---
 
 ## Data Collection
 
-Used code from [source]() to download and save multiple photos from google images of bear droppings, other animal droppings and miscellaneous photos.
+Used code from [source](https://python.plainenglish.io/how-to-automatically-download-bulk-images-for-your-dataset-using-python-f1efffba7a03) to download and save multiple photos from google images of bear droppings, other animal droppings and miscellaneous photos.
 
-I manually sorted the photos (and deleted irrelevant ones) into two classes, ["bear_scat"](https://git.generalassemb.ly/makenajones/Capstone/tree/main/images/bear_scat) and ["anything_but"](https://git.generalassemb.ly/makenajones/Capstone/tree/main/images/anything_but) to have 524 photos in each class of my custom dataset, for a total of 1048 images to use for the classification models. 
+I manually sorted the photos (and deleted irrelevant ones) into two classes, ["bear_scat"](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/tree/main/images/bear_scat) and ["anything_but"](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/tree/main/images/anything_but) to have 524 photos in each class of my custom dataset, for a total of 1048 images to use for the classification models. 
 
 ---
 
 ## EDA and Null Model
 
 Labelled data into two classes: Bear Scat (1) and Not Bear Scat(2).
-![image](https://git.generalassemb.ly/makenajones/Capstone/blob/main/figures/bearpoo_vs_not.png)
+![image](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/blob/main/figures/bearpoo_vs_not.png)
 
 Also checked out null model, which has an accuracy of 50% as if we predicted every image was bear poo, we would classify it correctly 50% of the time.
    
