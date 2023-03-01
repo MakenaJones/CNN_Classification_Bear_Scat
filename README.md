@@ -29,16 +29,16 @@ This capstone aims to develop the best possible binary classification model with
 
 ## Data Collection
 
-Used code from [source]() to download and save multiple photos from google images of bear droppings, other animal droppings and miscellaneous photos.
+Used code from [source](https://python.plainenglish.io/how-to-automatically-download-bulk-images-for-your-dataset-using-python-f1efffba7a03) to download and save multiple photos from google images of bear droppings, other animal droppings and miscellaneous photos.
 
-I manually sorted the photos (and deleted irrelevant ones) into two classes, ["bear_scat"](https://git.generalassemb.ly/makenajones/Capstone/tree/main/images/bear_scat) and ["anything_but"](https://git.generalassemb.ly/makenajones/Capstone/tree/main/images/anything_but) to have 524 photos in each class of my custom dataset, for a total of 1048 images to use for the classification models. 
+I manually sorted the photos (and deleted irrelevant ones) into two classes, ["bear_scat"](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/tree/main/images/bear_scat) and ["anything_but"](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/tree/main/images/anything_but) to have 524 photos in each class of my custom dataset, for a total of 1048 images to use for the classification models. 
 
 ---
 
 ## EDA and Null Model
 
 Labelled data into two classes: Bear Scat (1) and Not Bear Scat(2).
-![image](https://git.generalassemb.ly/makenajones/Capstone/blob/main/figures/bearpoo_vs_not.png)
+![image](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/blob/main/figures/bearpoo_vs_not.png)
 
 Also checked out null model, which has an accuracy of 50% as if we predicted every image was bear poo, we would classify it correctly 50% of the time.
    
@@ -48,7 +48,7 @@ Also checked out null model, which has an accuracy of 50% as if we predicted eve
 
 Used data augmentation to help train the CNN model, which ended up performing decently when it came to accuracy and loss (without data augmentation as doing so greatly decreased its performance despite making it less overfit). The simple model had an accuracy score of 85% on the validation data, but when tested on a few test images, it could not identify 1 of the 3 images of bear scat any better than the null model.
 
-![plot](https://git.generalassemb.ly/makenajones/Capstone/blob/main/figures/no_augmentation_plot.png)
+![plot](https://github.com/MakenaJones/CNN_Classification_Bear_Scat/blob/main/figures/no_augmentation_plot.png)
 
 Transfer model EfficientNetB0 did not perform significantly better than the simple CNN model created for the project.
 
